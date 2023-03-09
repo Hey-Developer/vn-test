@@ -1,8 +1,18 @@
 import React from "react";
-import HelloWorld from "./components/HelloWorld/HelloWorld";
+import { Routes, Route } from "react-router";
+import Layout from "./components/Layouts/Layout";
+import Doc from "./views/Doc";
+import Home from "./views/Home";
 
 const App = () => {
-  return <HelloWorld />;
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/doc/:id" element={<Doc />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;

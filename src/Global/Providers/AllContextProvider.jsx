@@ -2,8 +2,8 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
-import GlobalCssPriority from "./Mui/GlobalCssPriority";
-import PlainCssPriority from "./Mui/PlainCssPriority";
+import GlobalCssPriority from "../MUI/GlobalCssPriority";
+import PlainCssPriority from "../MUI/PlainCssPriority";
 import theme from "../../theme/theme";
 import {
   COLORS,

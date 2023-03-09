@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import AllContextProvider from "./Global/Providers/AllContextProvider";
+import AllContextProvider from "./global/Providers/AllContextProvider";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AllContextProvider>
-      <App />
-    </AllContextProvider>
+    <BrowserRouter>
+      <AllContextProvider>
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </AllContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

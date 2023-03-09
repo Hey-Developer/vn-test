@@ -1,6 +1,13 @@
 import { Box, Typography } from "@mui/material";
+import styled from "@emotion/styled";
+import { css } from "@emotion/react";
 
-export const COLORS = {};
+export const COLORS = {
+  text1: "#fff",
+  text2: "#000",
+  text3: "rgba(64, 64, 64, 0.8)",
+  text4: "rgba(64, 64, 64, 0.6)",
+};
 export const FONT_SIZES = {};
 export const FONT_WEIGHT = {};
 export const FONT_FAMILY = {};
